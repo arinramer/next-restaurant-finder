@@ -79,7 +79,7 @@ export default function Modal(props) {
     }
     return (
         <div className="fixed top-0 left-0 h-screen w-screen bg-white">
-            <div className="sm:h-4/5 overflow-y-auto z-10 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto p-5 rounded transition shadow-md bg-white">
+            <div className="sm:h-4/5 overflow-y-auto z-10 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto p-5 sm:p-10 rounded transition shadow-md bg-white">
                 <p className="text-center text-3xl mt-2">Reviews and Menu</p>
                 <div className="flex sm:flex-col">
                     <div className="h-64 w-64 overflow-y-auto p-2 m-2 shadow-md">
@@ -103,7 +103,7 @@ export default function Modal(props) {
                             }): <p className="text-center mt-10">No menu items reported :(</p>}
                     </div>
                 </div>
-                <p className="text-2xl mb-4">Write a review</p>
+                <p className="text-2xl my-4">Write a review</p>
                 <form className="mb-4">
                     <input className="mb-3 mr-3 focus:outline-none focus:ring focus:border-blue-300 rounded-md p-2 transition shadow hover:shadow-lg" type="text" placeholder="Title" value={title == 0 ? '' : title} onChange={handleTitle}/>
                     <input className="mb-3 mr-3 focus:outline-none focus:ring focus:border-blue-300 rounded-md p-2 transition shadow hover:shadow-lg" type="text" placeholder="Body" value={body == 0 ? '' : body} onChange={handleBody}/>
