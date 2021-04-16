@@ -79,9 +79,9 @@ export default function Modal(props) {
     }
     return (
         <div className="fixed top-0 left-0 h-screen w-screen bg-white">
-            <div className="z-10 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto m-3 p-5 rounded transition shadow-md bg-white">
+            <div className="sm:h-4/5 overflow-y-auto z-10 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto p-5 rounded transition shadow-md bg-white">
                 <p className="text-center text-3xl mt-2">Reviews and Menu</p>
-                <div className="flex">
+                <div className="flex sm:flex-col">
                     <div className="h-64 w-64 overflow-y-auto p-2 m-2 rounded transition shadow-md">
                         {reviews.length > 0 ? reviews.map(review => {
                             return(

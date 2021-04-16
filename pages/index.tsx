@@ -15,7 +15,10 @@ export default function Home() {
           if(restaurants){
             setLoading(false)
           }
-        })
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }, [zipcode])
   const handleChange = e => {
     e.preventDefault()
