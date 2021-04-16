@@ -82,7 +82,7 @@ export default function Modal(props) {
             <div className="sm:h-4/5 overflow-y-auto z-10 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto p-5 rounded transition shadow-md bg-white">
                 <p className="text-center text-3xl mt-2">Reviews and Menu</p>
                 <div className="flex sm:flex-col">
-                    <div className="h-64 w-64 overflow-y-auto p-2 m-2 rounded transition shadow-md">
+                    <div className="h-64 w-64 overflow-y-auto p-2 m-2 shadow-md">
                         {reviews.length > 0 ? reviews.map(review => {
                             return(
                                 <div key={review.id} className="p-2">
@@ -92,7 +92,7 @@ export default function Modal(props) {
                             )
                         }): <p className="text-center mt-10">No reviews :(</p>}
                     </div>
-                    <div className="h-64 w-64 overflow-y-auto p-2 m-2 rounded transition shadow-md">
+                    <div className="h-64 w-64 overflow-y-auto p-2 m-2 shadow-md">
                         {menu.length > 0 ? menu.map(menu => {
                                 return(
                                     <div key={menu.id} className="p-2">
